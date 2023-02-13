@@ -1,6 +1,6 @@
-# Start
-## **Day 1**
-### **Meeting with client to discuss the project.**
+
+# **Day 1**
+### **1. Meeting with client to discuss the project.**
 ### Main Questions during this meeting:
 - What exactly is the vision for the app?
 - What are the expected functionalities?
@@ -14,6 +14,14 @@
 ### *I will reord this meeting as proof.*
 <br>
 
-### **Goals of day 1: Have the UML document done and submitted to the client for approval and get the backlog filled with user stories based off of the kickoff meeting.**
+### **2. Have the UML document done and submitted to the client for approval.**
+### **3. Update the log.**
+<br>
 
-
+# **Day 2**
+### **1. Get the backlog filled with user stories based off of the kickoff meeting.**
+*YouTrack by jetbrains is ready with a repo called BitExam*
+### **2. Sort out all the user stories based off of the MOSCOW method.**
+### **3. Create a step by step plan for user stories.**
+### **4. Update the log.**
+<br>
