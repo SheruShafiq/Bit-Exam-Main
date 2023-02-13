@@ -1,7 +1,6 @@
 
 > # **Sprint 1**
 
-
 ## **Day 1**
 ### 1. Meeting with client to discuss the project.
 ### Main Questions during this meeting:
@@ -89,4 +88,29 @@
 *Make sure to avoid redundant or uneassary code. Explain every function, import, export, output etc. with comments*
 ### 2. Update the log.
 ### 2. Update the SRUM board.
+<br>
+
+> # **Sprint 3** (*If MVP is done and ready*)
+## **Day 1**
+### 1. Review and Retrospective.
+### Main Questions during this meeting:
+- Did we achieve our sprint goals from the previous sprint?
+- What went wrong? What went right?
+- How can we improve?
+- Does the client approve this as MVP?
+- Discuss any possible invunlerabities or insecurities of the app that need to be tested.
+- What stories/features are the most important in terms of testing?
+- What is our demo day date and time? 
+- What is expected on the demo day?
+  
+### *I will reord this meeting as proof.*
+<br>
+
+### 2. Update the SRUM board based off of the discussions and events from last sprint.
+### 3. Add test goals next to the selected stories that will be tested. What results are expected etc.
+### 4. Create a file that contains all the details about the testing envoirnment.
+### 5. Update the backlog.
+### 6. Update the log.
+### 7. Update stories that have been with test results and weather they were in range or not.
+### 8. Note every single occurence of the testing process, which test worked, which didnt, why did it not, what was the expected result, what was the actual result etc.
 <br>
