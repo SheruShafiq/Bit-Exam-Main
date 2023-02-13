@@ -90,7 +90,7 @@
 ### 2. Update the SRUM board.
 <br>
 
-> # **Sprint 3** (*If MVP is done and ready*)
+> # **Sprint 3** 
 ## **Day 1**
 ### 1. Review and Retrospective.
 ### Main Questions during this meeting:
@@ -112,5 +112,28 @@
 ### 5. Update the backlog.
 ### 6. Update the log.
 ### 7. Update stories that have been with test results and weather they were in range or not.
-### 8. Note every single occurence of the testing process, which test worked, which didnt, why did it not, what was the expected result, what was the actual result etc.
+### 8. Note every single occurence of the testing process in a test log file, which test worked, which didnt, why did it not, what was the expected result, what was the actual result etc.
+### 9. Update the test log.
+<br>
+
+## **Day 2**
+### 1. Continue with the testing process
+### 2. Update the log.
+### 3. Update the backlog.
+### 4. Update stories that have been with test results and weather they were in range or not.
+### 5. Update the test log.
+<br>
+
+## **Day 3**
+### 1. Continue with the testing process
+### 2. Update the log.
+### 3. Update the backlog.
+### 4. Update stories that have been with test results and weather they were in range or not.
+### 5. Update the test log.
+*It is advised to finsih the testing process by the end of this day.*
+<br>
+
+## **Day 4**
+### 1. Continue with the testing process
+
 <br>
