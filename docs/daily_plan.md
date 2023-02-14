@@ -18,7 +18,7 @@
 ### *I will reord this meeting as proof.*
 <br>
 
-### 2. Have the UML document done and submitted to the client for approval.
+### 2. Have the UML document done and submitted to the client for approval. Use-case diagram, activity diagram, class diagram, sequence diagram, state diagram, component diagram, deployment diagram.
 ### 3. Update the log.
 <br>
 
@@ -102,6 +102,7 @@
 - What stories/features are the most important in terms of testing?
 - What is our demo day date and time? 
 - What is expected on the demo day?
+- Shceduel in a day for a review meeting with the client.
   
 ### *I will reord this meeting as proof.*
 <br>
