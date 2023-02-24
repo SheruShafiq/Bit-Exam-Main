@@ -135,6 +135,30 @@
 <br>
 
 ## **Day 4**
-### 1. Continue with the testing process
-### 2. Continue with the testing process
+### 1. Cleanup the code and repository and make sure that the build version is ready for the demo day.
+### 2. Update the log.
+### 3. Update the backlog.
+### 4. Update storyboard.
+### 5. Preapare a presentation for the demo day.
 <br>
+
+> # **Demo Day + Retro**
+*It is advised to make sure that the MVP is finished this sprint in order to fullfill all forms of testing next sprint and be on scheduel*
+## **Demo**
+### Main key points this meeting:
+- What are all the functionalities that the app can perform atm
+- Are all the functionalities discussed implemented
+- What wasnt implemented? Why not?
+- What was implemented that wasnt discussed? Why?
+- What are the plans for the future of the app?
+- Does the app meet the requirements of the client?
+- What can be improved?
+- What are the plans for implementing the app with the main website?
+
+## **Retro**
+- What went wrong? What went right?
+- What can be improved in future projects
+- Any advice from the client?
+- Extra feedback on the process, app, procudeure etc.
+
+
