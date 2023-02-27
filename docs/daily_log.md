@@ -7,4 +7,5 @@ of time and resources required for the company in order to do this project.
 - Boss proposed the idea of making a website for the company aimed towards anyone who wishes to do an internship at the company. The website will contain all the information about the company, the internship and a form to submit an application. 
 - Idea was accepted 
 - Schedueled in meetings in accordance with the project plan 
-  
+## **27/02/2023**
+- Created a document with all the key questions that will be asked during the kickoff meeting with the client.
