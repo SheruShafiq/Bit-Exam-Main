@@ -1,4 +1,5 @@
 Meeting 1, key questions:
+Record the meeting
 1) What are possible functionalities?
 Proposal: An application form, an outline of what headline does, a gallery of all the workers here 
 with their photo and description. Minimum requirements. A bit about what Headline expects and what
@@ -8,8 +9,7 @@ Proposal: A website that  has a working form
 3) Is it going to be also mobile friendly or exclusively Desktop?
 Proposal: Mobile friendly yws
 4) Sort out the features on the basis of MOSCOW
+5) plan out the next meeting
+6) Code reviwer in plannen? 
 
-Overige vragen:
-1) contract signing 
-2) confirming hours
-3) sprint meeting
+ Extra vragen?
