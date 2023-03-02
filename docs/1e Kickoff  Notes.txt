@@ -1,14 +1,101 @@
+Bijeenkomst 1, kernvragen:
+
+1) Wat zijn mogelijke functionaliteiten?
+Bekijk vacatures
+Vacature bekijken
+Bekijk foto's
+Locatie bekijken
+CV uploaden (PDF, IMG)
+Proces bekijken
+
+2) Wat is onze MVP?
+Een website met een functionerend formulier dat gebruikersgegevens naar een aangewezen e-mailadres stuurt.
+
+4) Verwachtingen?
+Verwacht wordt dat deze website zal integreren in de oorspronkelijke hoofdwebsite van Headline.
+
+5) plan de volgende vergadering
+
+6) Code reviewer in plannen?
+
+
+
+
+
+
+
+- Opdrachtgever – wat is de achtergrond?
+Korte Introductie van headline
+
+- Project – waarom doen we dit?
+Om de proces van stagairs in nemen, makkelijker te maken. 
+
+- Doel - wanneer is dit project geslaagd? Wat staat er dan? Wat is 'succes'? Wat is jullie 'DoD'?
+Als de website MVP werkend is
+
+- Core features - wat zijn de belangrijkste features van het product?
+Bekijk vacatures
+Vacature bekijken
+Bekijk foto's
+Locatie bekijken
+CV uploaden (PDF, IMG)
+Proces bekijken
+
+- Aannames - zijn er aannames gemaakt? Dan controleer je die nu.
+Verwacht wordt dat deze website zal integreren in de oorspronkelijke hoofdwebsite van Headline.
+
+- Planning - moeten er alvast meetings gepland worden?
+We gaan wekelijk meetings aan houden na elke sprint. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Meeting 1, key questions:
 Record the meeting
+
 1) What are possible functionalities?
-Proposal: An application form, an outline of what headline does, a gallery of all the workers here 
-with their photo and description. Minimum requirements. A bit about what Headline expects and what
-is the sallary indication.
+Check Vacancies
+View Vacancy
+View Photos 
+View Location
+Upload CV (PDF, IMG)
+View Process
+
 2) What is our MVP?
-Proposal: A website that  has a working form 
-3) Is it going to be also mobile friendly or exclusively Desktop?
-Proposal: Mobile friendly yws
-4) Sort out the features on the basis of MOSCOW
+A website that has a functioning form that sends user data to designated Email adress.
+
+3) Sort out the features on the basis of MOSCOW
+Check Vacancies Must have
+View Vacancy	Must have 
+View Photos 	Could have
+View Location	Could have
+Upload CV (PDF, IMG) Could have
+View Process	Should have
+
+4) Expectations?
+It is expected for this website to intergrate into Headline's orignal main website.
+
+
 5) plan out the next meeting
 6) Code reviwer in plannen? 
 
