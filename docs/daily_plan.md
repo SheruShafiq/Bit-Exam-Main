@@ -18,7 +18,7 @@
 ### *I will reord this meeting as proof.*
 <br>
 
-### 2. Have the UML document done and submitted to the client for approval. Use-case diagram, activity diagram, class diagram, sequence diagram, state diagram, component diagram, deployment diagram.
+### 2. Have the UML document done and submitted to the client for approval. Use-case diagram, activity diagram,  sequence diagram,
 ### 3. Update the log.
 <br>
 
