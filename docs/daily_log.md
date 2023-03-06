@@ -9,3 +9,6 @@ of time and resources required for the company in order to do this project.
 - Schedueled in meetings in accordance with the project plan 
 ## **27/02/2023**
 - Created a document with all the key questions that will be asked during the kickoff meeting with the client.
+## **06/03/2023**
+- Succefully conducted the kickoff meeting with the client.
+-  Noted all the requests and requirements that the client has for the project.

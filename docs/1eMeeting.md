@@ -1,9 +1,0 @@
-- Introductie – ontmoet je nieuwe team.
-- Opdrachtgever – wat is de achtergrond?
-- Project – waarom doen we dit?
-- Doel - wanneer is dit project geslaagd? Wat staat er dan? Wat is 'succes'? Wat is jullie 'DoD'?
-- Core features - wat zijn de belangrijkste features van het product?
-- Aannames - zijn er aannames gemaakt? Dan controleer je die nu.
-- Aanpak – hoe gaan we dit mogelijk maken? Hoe werken we samen?
-- Planning - moeten er alvast meetings gepland worden?
-- Q&A – zijn er nog openstaande punten?
