@@ -28,6 +28,7 @@
 ### 2. Create a step by step plan for user stories.
 ### 3. Pick which stories will I be working on this sprint based off whats expected at the end of this sprint.
 ### 4. Update the log.
+### 5. Create a figma design for the mobile and desktop version of the app.
 
 ## **Day 3**
 ### 1. Setup the development envoirnment

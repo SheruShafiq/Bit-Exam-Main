@@ -11,4 +11,6 @@ of time and resources required for the company in order to do this project.
 - Created a document with all the key questions that will be asked during the kickoff meeting with the client.
 ## **06/03/2023**
 - Succefully conducted the kickoff meeting with the client.
--  Noted all the requests and requirements that the client has for the project.
+- Noted all the requests and requirements that the client has for the project.
+- Completed all UML Diagrams and submitted them to the client for approval.
+- Succesfully approved all diagrans. 
