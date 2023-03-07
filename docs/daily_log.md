@@ -14,3 +14,5 @@ of time and resources required for the company in order to do this project.
 - Noted all the requests and requirements that the client has for the project.
 - Completed all UML Diagrams and submitted them to the client for approval.
 - Succesfully approved all diagrans. 
+- Created a prototype of the website's mobile version using Figma, submitted it for approval.
+  
