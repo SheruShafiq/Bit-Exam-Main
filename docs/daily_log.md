@@ -23,3 +23,4 @@ of time and resources required for the company in order to do this project.
 - Populated the backlog with user stories based off of the kickoff meeting and organized them into sprints and epics.
 - Created a day by day scheduel for the next two sprints.
 - Updated the questionaire for the next sprints meeting due to privacy and content concerns.
+- Created the desktop design in Figma and submitted it for approval.
