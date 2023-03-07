@@ -24,7 +24,6 @@
 
 ## **Day 2**
 ### 1. Populate the backlog with user stories based off of the kickoff meeting.
-*YouTrack by Jetbrains is ready with a repo called BitExam*
 ### 2. Create a step by step plan for user stories.
 ### 3. Pick which stories will I be working on this sprint based off whats expected at the end of this sprint.
 ### 4. Update the log.
@@ -52,6 +51,9 @@
 ## **Day 1**
 ### 1. Review and Retrospective.
 ### Main Questions during this meeting:
+- What is the solicitatie process? After the user has submitted the apllication, what happens next?
+- Who will be writing the texts for the app?
+- What is the info that HeadLine needs from the user?
 - Did we achieve our sprint goals from the previous sprint?
 - What went wrong? What went right?
 - How can we improve?
