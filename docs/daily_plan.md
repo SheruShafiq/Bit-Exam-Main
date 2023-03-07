@@ -54,6 +54,7 @@
 - What is the solicitatie process? After the user has submitted the apllication, what happens next?
 - Who will be writing the texts for the app?
 - What is the info that HeadLine needs from the user?
+- Since we are working with private data, may I add agreement to a terms and conditions?
 - Did we achieve our sprint goals from the previous sprint?
 - What went wrong? What went right?
 - How can we improve?
