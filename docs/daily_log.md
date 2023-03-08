@@ -24,3 +24,6 @@ of time and resources required for the company in order to do this project.
 - Created a day by day scheduel for the next two sprints.
 - Updated the questionaire for the next sprints meeting due to privacy and content concerns.
 - Created the desktop design in Figma and submitted it for approval.
+> ## **08/03/2023**
+- Recieved feedback on desktop version's Figma from our Lead Designer Erwin
+- Worked off most of the feedback and submitted the updated version for approval.
