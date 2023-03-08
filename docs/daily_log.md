@@ -27,3 +27,7 @@ of time and resources required for the company in order to do this project.
 > ## **08/03/2023**
 - Recieved feedback on desktop version's Figma from our Lead Designer Erwin
 - Worked off most of the feedback and submitted the updated version for approval.
+- Started researching mailing APIs for react
+- Tried SendGrid, NodeMailer and emailJs
+- Setteled on emailJs due to simpilcity and ease of use
+- Tested the API and it works
