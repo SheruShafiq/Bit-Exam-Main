@@ -31,3 +31,8 @@ of time and resources required for the company in order to do this project.
 - Tried SendGrid, NodeMailer and emailJs
 - Setteled on emailJs due to simpilcity and ease of use
 - Tested the API and it works
+> ## **09/03/2023**
+- Planned the next meeting in with the client 
+- Updated the plan with some extra questions for the meeting
+- Continued working on the desktop design in Figma, improving on the feedback
+- Submitted the design for approval
