@@ -1,5 +1,3 @@
- What is the solicitatie process? After the user has submitted the apllication, what happens next?
-Use placeholders for now.
 - Who will be writing the texts for the app?
 Placeholders for now.
 - What is the info that HeadLine needs from the user?

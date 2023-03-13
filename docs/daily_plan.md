@@ -98,6 +98,7 @@
 ## **Day 1**
 ### 1. Review and Retrospective.
 ### Main Questions during this meeting:
+- What is the solicitatie process? After the user has submitted the apllication, what happens next?
 - Did we achieve our sprint goals from the previous sprint?
 - What went wrong? What went right?
 - How can we improve?
