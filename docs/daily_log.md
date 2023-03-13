@@ -36,3 +36,7 @@ of time and resources required for the company in order to do this project.
 - Updated the plan with some extra questions for the meeting
 - Continued working on the desktop design in Figma, improving on the feedback
 - Submitted the design for approval
+> ## **03/03/2023**
+- Desktop design approved.
+- Started working on the mobile design
+- Updated the Jira board

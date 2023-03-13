@@ -1,0 +1,51 @@
+
+
+#logo{
+    width: 4rem;
+    height: 3rem;
+    filter:
+    brightness(1000%) grayscale(100%) /* To change the image color to the white */
+    opacity(0.1) /* To apply the color all over the image */
+    drop-shadow(0 0 0 black) /* To apply my costum color */
+    drop-shadow(0 0 0 black) /* To apply my costum color more stronger */
+    drop-shadow(0 0 0 black)
+    drop-shadow(0 0 0 black)
+    drop-shadow(0 0 0 black);
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+#menuButton{
+    display: none;
+}
+.button{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    height: 2rem;
+}
+#menuDots{
+    font-size: xx-large;
+    font-family: 'Poppins, sans-serif';
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+#menu{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (min-width: 768px) {
+    #menuButton {
+      display: block;
+    }
+  }
+  

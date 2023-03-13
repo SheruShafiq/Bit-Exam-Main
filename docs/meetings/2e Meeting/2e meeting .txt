@@ -16,3 +16,5 @@ completeting the mvp
 The website core systems functioning.
 - Can we plan in a code review?
 Send Michael(Headline's lead developer) an email, asking his availablility (with Peter in cc).
+
+PS: Due to shortage of time, the meeting couldn't be as in depth as expected
