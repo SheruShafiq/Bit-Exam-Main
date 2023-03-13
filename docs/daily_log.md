@@ -40,3 +40,8 @@ of time and resources required for the company in order to do this project.
 - Desktop design approved.
 - Started working on the mobile design
 - Updated the Jira board
+- Created the landing page
+- Created a dynamic button component that accepts text as props (Lacks functionality)
+- Created a dynamic title component that accepts text as props (Not tested yet)
+- Created the header component
+- Implemented the LandingPage content (as per client's request, currently using the same content as the parent website facatuur)
