@@ -13,7 +13,7 @@ function App() {
       <div id="mainContent">
         <LandingPageContent />
         <div id="buttonApp">
-          <Button />
+          <Button buttonText="Geïnteresseerd?" />
         </div>
       </div>
     </div>

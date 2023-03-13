@@ -1,10 +1,11 @@
 import React from "react";
 import "../styles/ButtonStyles.css";
 
-function Button() {
+function Button(...props) {
+  const buttonText = props[0].buttonText;
   return (
     <div>
-      <button id="submitComponent">Geïnteresseerd?</button>
+      <button id="submitComponent">{buttonText}</button>
     </div>
   );
 }
