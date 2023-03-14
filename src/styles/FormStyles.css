@@ -1,0 +1,11 @@
+.contact__form {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#fieldTitle {
+  color: white;
+  font-family: "poppins";
+}
