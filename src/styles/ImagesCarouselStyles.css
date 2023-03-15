@@ -17,3 +17,11 @@
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.react-slideshow-container {
+  overflow: hidden;
+}
+.react-slideshow-wrapper.slide {
+  width: 100%;
+  overflow: visible;
+  scale: 86%;
+}

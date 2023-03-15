@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 
-import "../styles/ImagesCarouselStyles.css";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
+import "../styles/ImagesCarouselStyles.css";
 
 function ImageCarousel({ images }) {
   return (
