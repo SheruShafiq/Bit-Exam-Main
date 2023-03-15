@@ -45,12 +45,17 @@ of time and resources required for the company in order to do this project.
 - Created a dynamic title component that accepts text as props (Not tested yet)
 - Created the header component
 - Implemented the LandingPage content (as per client's request, currently using the same content as the parent website facatuur)
-> ## **15/03/2023**
-- Encountered a premium subscription wall for attatchments on the emailJs API
+> ## **14/03/2023**
 - Created the application form page
-- Created custom input components for the form
+- Created an image carousel component
+- Custom animations were glitching on mobile, switched to react-slideshow-image library
+- Optimized the carousel for mobile
+- Fixed the header not being fixed on application form page (error was due to z-index)
+- Created custom input components for the form\
+> ## **15/03/2023**
 - Custom made input components weren't working so implemented and customized Material UI's input components
 - Updated the API to use the new input components
+- Encountered a premium subscription wall for attatchments on the emailJs API
 - Tested the API and it works
 - Updated the Jira board and user stories
 - Decided to screenshot my daily VSCode activity and upload it to the repository as a proof of work
