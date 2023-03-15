@@ -1,11 +1,9 @@
-import React, { useRef } from "react";
+import React from "react";
 import emailjs from "@emailjs/browser";
 import "../styles/FormStyles.css";
 import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
 
 function Form() {
-  const hiddenBrowseButton = React.useRef(null);
   const textFieldProps = [
     { type: "text", name: "name", id: "name", label: "Naam" },
     {
