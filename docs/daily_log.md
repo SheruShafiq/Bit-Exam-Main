@@ -53,4 +53,5 @@ of time and resources required for the company in order to do this project.
 - Updated the API to use the new input components
 - Tested the API and it works
 - Updated the Jira board and user stories
+- Decided to screenshot my daily VSCode activity and upload it to the repository as a proof of work
 
