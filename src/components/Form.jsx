@@ -1,20 +1,11 @@
-import React from "react";
+import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "../styles/FormStyles.css";
 import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
 
 function Form() {
-  const sendEmail = (e) => {
-    e.preventDefault();
-    emailjs.sendForm(
-      "service_nh0au8c",
-      "template_k07o36l",
-      e.target,
-      "WaOT6BUTbyQbhGR8B"
-    );
-    console.log("Email sent");
-  };
-
+  const hiddenBrowseButton = React.useRef(null);
   const textFieldProps = [
     { type: "text", name: "name", id: "name", label: "Naam" },
     {
@@ -43,6 +34,13 @@ function Form() {
       InputLabelProps: {
         style: { fontFamily: "Poppins", color: "white", fontSize: "20px" },
       },
+      inputProps: {
+        style: {
+          fontFamily: "Poppins",
+          color: "white",
+          marginTop: "1rem",
+        },
+      },
     },
     { type: "email", name: "email", id: "email", label: "Email" },
     { type: "tel", name: "tel", id: "tel", label: "Telefoon" },
@@ -60,24 +58,93 @@ function Form() {
       id: "Opleiding",
       label: "Opleiding",
     },
+    {
+      type: "file",
+      name: "Solicitatie brief",
+      id: "Solicitatiebrief",
+      label: "Solicitatie brief",
+
+      sx: {
+        "& .MuiInputBase-input": {
+          textAlignLast: "end",
+        },
+
+        width: "100%",
+        marginTop: "1rem",
+        color: "white",
+        "& .MuiInput-underline:after": {
+          borderBottomColor: " rgb(255,255,255, 0.1)",
+          borderBottomWidth: "1px",
+        },
+        "& .MuiInput-underline:before": {
+          borderBottomWidth: "1px",
+          borderBottomColor: " rgb(255,255,255, 0.3)",
+        },
+      },
+    },
+    {
+      type: "file",
+      name: "CV uploaden",
+      id: "CVuploaden",
+      label: "CV uploaden",
+
+      sx: {
+        "& .MuiInputBase-input": {
+          textAlignLast: "end",
+        },
+
+        width: "100%",
+        marginTop: "1rem",
+        color: "white",
+        "& .MuiInput-underline:after": {
+          borderBottomColor: " rgb(255,255,255, 0.1)",
+          borderBottomWidth: "1px",
+        },
+        "& .MuiInput-underline:before": {
+          borderBottomWidth: "1px",
+          borderBottomColor: " rgb(255,255,255, 0.3)",
+        },
+      },
+    },
+    {
+      type: "textarea",
+      name: "Hoe heb je ons gevonden?",
+      id: "Hoehebjeonsgevonden?",
+      label: "Hoe heb je ons gevonden?",
+    },
   ];
+  const sendEmail = async (e) => {
+    e.preventDefault();
+    try {
+      await emailjs.sendForm(
+        "service_nh0au8c",
+        "template_k07o36l",
+        e.target,
+        "WaOT6BUTbyQbhGR8B"
+      );
+      console.log("Email sent");
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <div className="Form">
       <form className="contact__form" onSubmit={sendEmail}>
         {textFieldProps.map((textField) => (
           <TextField
-            placeholder=""
             key={textField.id}
             variant="standard"
+            placeholder=""
             InputLabelProps={{
+              style: { fontFamily: "Poppins", color: "white" },
+            }}
+            inputProps={{
               style: {
                 fontFamily: "Poppins",
                 color: "white",
+                marginTop: "0.5rem",
               },
-            }}
-            inputProps={{
-              style: { fontFamily: "Poppins", color: "white" },
             }}
             sx={{
               input: { color: "white" },

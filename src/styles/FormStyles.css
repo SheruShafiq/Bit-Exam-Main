@@ -5,6 +5,7 @@
   align-items: flex-start;
   justify-content: space-around;
   padding: 1rem;
+  padding-bottom: 5rem;
 }
 .MuiInput-underline:before,
 .MuiInput-underline:hover:before {
@@ -27,5 +28,12 @@
   font-family: "Poppins";
   font-size: 12px;
   font-weight: 500;
-  margin-top: 8rem;
+  margin-top: 5rem;
+}
+input[type="file"]::file-selector-button {
+  position: relative;
+  left: 270px;
+  background-image: "../images/upload.png";
+  font-display: none;
+  display: none;
 }

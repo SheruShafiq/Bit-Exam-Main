@@ -98,6 +98,7 @@
 ## **Day 1**
 ### 1. Review and Retrospective.
 ### Main Questions during this meeting:
+- Info: Mailing API's attatchment function requires a subscription, the functionality is there but it wont work unless the client pays for it.
 - What is the solicitatie process? After the user has submitted the apllication, what happens next?
 - Did we achieve our sprint goals from the previous sprint?
 - What went wrong? What went right?

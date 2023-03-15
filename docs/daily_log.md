@@ -36,7 +36,7 @@ of time and resources required for the company in order to do this project.
 - Updated the plan with some extra questions for the meeting
 - Continued working on the desktop design in Figma, improving on the feedback
 - Submitted the design for approval
-> ## **03/03/2023**
+> ## **13/03/2023**
 - Desktop design approved.
 - Started working on the mobile design
 - Updated the Jira board
@@ -45,3 +45,12 @@ of time and resources required for the company in order to do this project.
 - Created a dynamic title component that accepts text as props (Not tested yet)
 - Created the header component
 - Implemented the LandingPage content (as per client's request, currently using the same content as the parent website facatuur)
+> ## **15/03/2023**
+- Encountered a premium subscription wall for attatchments on the emailJs API
+- Created the application form page
+- Created custom input components for the form
+- Custom made input components weren't working so implemented and customized Material UI's input components
+- Updated the API to use the new input components
+- Tested the API and it works
+- Updated the Jira board and user stories
+
