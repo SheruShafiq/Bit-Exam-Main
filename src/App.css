@@ -11,7 +11,13 @@
   align-items: center;
   overflow-x: hidden;
 }
-
+#resultParent {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
 #titleApp,
 #mainContent {
   padding: 1rem;

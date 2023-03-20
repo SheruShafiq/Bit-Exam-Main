@@ -9,7 +9,7 @@ function Succesful({ error }) {
     return <Error />;
   }
   return (
-    <>
+    <div id="resultParent">
       <div id="titleApp">
         <Title titleText="Verzonden" subText="Die is binnen" />
       </div>
@@ -33,7 +33,7 @@ function Succesful({ error }) {
           />
         </svg>
       </div>
-    </>
+    </div>
   );
 }
 
