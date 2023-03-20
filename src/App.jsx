@@ -1,51 +1,64 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
-import Header from "./components/Header.jsx";
-import Title from "./components/Title";
-import LandingPageContent from "./components/LandingPageContent";
-import Button from "./components/Button";
-import ImageCarousel from "./components/ImageCarousel";
-import image1 from "./images/carousel/1.png";
-import image2 from "./images/carousel/2.png";
-import image3 from "./images/carousel/3.png";
-import Form from "./components/Form";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Outlet,
+  useLocation,
+} from "react-router-dom";
+import Landing from "./pages/Landing";
+import Application from "./pages/Form";
+import Succesful from "./pages/Succesful";
+import Header from "./components/Header";
+import { motion } from "framer-motion";
+import ScrollToTop from "./components/ScrollToTop";
+
+const PageLayout = ({ children }) => children;
+
+const pageVariants = {
+  initial: {
+    opacity: 0,
+  },
+  in: {
+    opacity: 1,
+  },
+  out: {
+    opacity: 0,
+  },
+};
+const pageTransition = {
+  type: "tween",
+  ease: "linear",
+  duration: 0.5,
+};
+
+const AnimationLayout = () => {
+  const { pathname } = useLocation();
+  return (
+    <PageLayout>
+      <motion.div style={{ originX: 0.5 }}>
+        <Outlet />
+      </motion.div>
+    </PageLayout>
+  );
+};
 
 function App() {
-  const images = [image1, image2, image3];
-  const [showLandingPage, setShowLandingPage] = useState(true);
-  const handleButtonClick = () => {
-    setShowLandingPage(false);
-  };
   return (
     <>
       <Header />
-      {showLandingPage ? (
-        <div id="landingPage">
-          <div id="titleApp">
-            <Title
-              titleText="Stagair Backend Developer"
-              subText="Stage bij HI"
-            />
-          </div>
-          <div id="mainContent">
-            <LandingPageContent />
-            <div id="buttonApp">
-              <Button
-                buttonText="Geïnteresseerd?"
-                onClick={handleButtonClick}
-              />
-            </div>
-          </div>
-        </div>
-      ) : (
-        <div id="formPage">
-          <div id="titleApp">
-            <Title titleText="Solliciteren" subText="Go for IT" />
-          </div>
-          <ImageCarousel images={images} />
-          <Form />
-        </div>
-      )}
+
+      <Router>
+        <ScrollToTop />
+        <Routes>
+          <Route element={<AnimationLayout />}>
+            <Route exact path="/" element={<Landing />} />
+            <Route exact path="/form" element={<Application />} />
+            <Route exact path="/result" element={<Succesful />} />
+          </Route>
+        </Routes>
+      </Router>
     </>
   );
 }
