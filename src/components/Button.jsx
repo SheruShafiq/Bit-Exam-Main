@@ -5,7 +5,7 @@ function Button(...props) {
   const buttonText = props[0].buttonText;
   const onClick = props[0].onClick;
   return (
-    <div>
+    <div id="parentButton">
       <button id="submitComponent" onClick={onClick}>
         {buttonText}
       </button>

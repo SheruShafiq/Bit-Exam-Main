@@ -8,7 +8,7 @@ function Title(...props) {
     <>
       <div className="title">
         <p id="titleSubText">{subText}</p>
-        <h1>{titleText}</h1>
+        <h1 style={{ wordWrap: "break-word" }}>{titleText}</h1>
       </div>
     </>
   );

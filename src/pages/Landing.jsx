@@ -11,7 +11,7 @@ function App() {
     navigate("/form");
   };
   return (
-    <>
+    <div id="LandingParent">
       <div id="landingPage">
         <div id="titleApp">
           <Title titleText="Stagair Backend Developer" subText="Stage bij HI" />
@@ -23,7 +23,7 @@ function App() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

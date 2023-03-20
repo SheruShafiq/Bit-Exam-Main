@@ -2,8 +2,35 @@ import React from "react";
 import emailjs from "@emailjs/browser";
 import "../styles/FormStyles.css";
 import TextField from "@mui/material/TextField";
+import { useNavigate } from "react-router-dom";
+import CountUp from "react-countup";
 
-function Form() {
+function FormComponent() {
+  const navigate = useNavigate();
+  const [error, setError] = React.useState("");
+  const [isLoading, SetIsLoading] = React.useState(false);
+  const handleButtonClick = () => {};
+
+  const sendEmail = async (e) => {
+    e.preventDefault();
+    SetIsLoading(true);
+    try {
+      // await emailjs.sendForm(
+      //   "service_nh0au8c",
+      //   "template_k07o36l",
+      //   e.target,
+      //   "WaOT6BUTbyQbhGR8B"
+      // );
+      await new Promise((resolve) => setTimeout(resolve, 3000)); // 3 sec
+      console.log("Email sent");
+      SetIsLoading(false);
+      setError("error");
+      navigate("/result", { error: error });
+    } catch (error) {
+      setError(error);
+      navigate("/result", { error: error });
+    }
+  };
   const textFieldProps = [
     { type: "text", name: "name", id: "name", label: "Naam" },
     {
@@ -111,26 +138,13 @@ function Form() {
       label: "Hoe heb je ons gevonden?",
     },
   ];
-  const sendEmail = async (e) => {
-    e.preventDefault();
-    try {
-      await emailjs.sendForm(
-        "service_nh0au8c",
-        "template_k07o36l",
-        e.target,
-        "WaOT6BUTbyQbhGR8B"
-      );
-      console.log("Email sent");
-    } catch (error) {
-      console.log(error);
-    }
-  };
 
   return (
     <div className="Form">
       <form className="contact__form" onSubmit={sendEmail}>
         {textFieldProps.map((textField) => (
           <TextField
+            // x
             key={textField.id}
             variant="standard"
             placeholder=""
@@ -161,10 +175,23 @@ function Form() {
             {...textField}
           />
         ))}
-        <input type="submit" value="Verzenden" id="submitForm" />
+        <div id="inputFields">
+          <input
+            type="submit"
+            value="Verzenden"
+            id="submitForm"
+            onClick={handleButtonClick}
+          />
+          {isLoading ? (
+            <div id="submitFormProcessing">
+              <CountUp delay={1} end={100} />
+              <p> % </p>
+            </div>
+          ) : null}
+        </div>
       </form>
     </div>
   );
 }
 
-export default Form;
+export default FormComponent;
