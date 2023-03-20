@@ -4,7 +4,7 @@ import Title from "../components/Title";
 import LandingPageContent from "../components/LandingPageContent";
 import Button from "../components/Button";
 import { useNavigate } from "react-router-dom";
-
+import "../styles/LandingPageRoute.css";
 function App() {
   const navigate = useNavigate();
   const handleButtonClick = () => {

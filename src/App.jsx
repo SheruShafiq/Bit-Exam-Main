@@ -37,7 +37,13 @@ const AnimationLayout = () => {
   const { pathname } = useLocation();
   return (
     <PageLayout>
-      <motion.div style={{ originX: 0.5 }}>
+      <motion.div
+        key={pathname}
+        initial="initial"
+        animate="in"
+        variants={pageVariants}
+        transition={pageTransition}
+      >
         <Outlet />
       </motion.div>
     </PageLayout>
