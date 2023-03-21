@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../images/logo.png";
 import "../styles/HeaderStyles.css";
-
+import Nav from "./NavMenu";
 function Header() {
   return (
     <div id="header">
@@ -9,12 +9,7 @@ function Header() {
         <img id="logo" src={logo} alt="Logo" />
       </a>
       <div id="menu">
-        <button id="menuButton" className="button">
-          Menu
-        </button>
-        <button id="menuDots" className="button">
-          ...
-        </button>
+        <Nav />
       </div>
     </div>
   );

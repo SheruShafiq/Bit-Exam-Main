@@ -32,8 +32,9 @@ function FormComponent() {
     }
   };
   const textFieldProps = [
-    { type: "text", name: "name", label: "Naam" },
+    { id: "name-field", type: "text", name: "name", label: "Naam" },
     {
+      id: "date-field",
       type: "date",
       name: "date",
       label: "Geboortedatum",
@@ -66,30 +67,31 @@ function FormComponent() {
         },
       },
     },
-    { type: "email", name: "email", label: "Email" },
-    { type: "tel", name: "tel", label: "Telefoon" },
-    { type: "url", name: "github", label: "GitHub" },
-    { type: "url", name: "linkdin", label: "Linkdin" },
+    { id: "email-field", type: "email", name: "email", label: "Email" },
+    { id: "tel-field", type: "tel", name: "tel", label: "Telefoon" },
+    { id: "github-field", type: "url", name: "github", label: "GitHub" },
+    { id: "linkdin-field", type: "url", name: "linkdin", label: "Linkdin" },
     {
+      id: "portfolio-field",
       type: "url",
       name: "portfolio",
       label: "Portfolio website",
     },
     {
+      id: "opleiding-field",
       type: "text",
       name: "Opleiding",
       label: "Opleiding",
     },
     {
+      id: "solicitatiebrief-field",
       type: "file",
       name: "Solicitatie brief",
       label: "Solicitatie brief",
-
       sx: {
         "& .MuiInputBase-input": {
           textAlignLast: "end",
         },
-
         width: "100%",
         marginTop: "1rem",
         color: "white",
@@ -104,15 +106,14 @@ function FormComponent() {
       },
     },
     {
+      id: "cv-upload-field",
       type: "file",
       name: "CV uploaden",
       label: "CV uploaden",
-
       sx: {
         "& .MuiInputBase-input": {
           textAlignLast: "end",
         },
-
         width: "100%",
         marginTop: "1rem",
         color: "white",
@@ -127,6 +128,7 @@ function FormComponent() {
       },
     },
     {
+      id: "found-us-field",
       type: "textarea",
       name: "Hoe heb je ons gevonden?",
       label: "Hoe heb je ons gevonden?",

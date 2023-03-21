@@ -5,7 +5,7 @@ import "../App.css";
 import Error from "../components/Error";
 
 function Succesful({ error }) {
-  if (!error) {
+  if (error) {
     return <Error />;
   }
   return (
