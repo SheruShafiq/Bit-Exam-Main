@@ -71,3 +71,16 @@ created a custom hook to reset the scroll on page change
 - Removed the carousel as it was causing bugs in the desktop version.
 - Styled the error and success page in accordance with the Figma design
 - Implemented react slick in both mobile and desktop version for the carosoul(in progress)
+> ## **20/03/2023**
+- Succesfully implemented React Carosoul in both mobile and desktop version
+- Created a navigation menue in accordance with the parent website
+- Styled the navigation menue for both mobile and desktop version
+- Encountered an error hover isn't working correctly and the menu animation doesn't lock the scroll
+- Implemented position: fixed to fix the scroll issue, still implemented a scroll lock for first second using useEffect just in case
+- Created a loading screen component that is displayed while the first page is loading
+- Implemented the loading screen in the app and synced it's animation with the landing page animation
+- Re configured the header in accordance with the new nav menu.
+- Tested the build version on my own phone
+- Updated the Jira Board and screenshotted the discord activity
+- Contacted the client to schedule the next meeting
+- Finished the second sprint and started the third sprint
