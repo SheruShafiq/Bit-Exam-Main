@@ -16,7 +16,7 @@ function App() {
     // Enable scrolling after 5 seconds
     setTimeout(() => {
       document.body.style.overflow = "auto";
-    }, 5000);
+    }, 3000);
   }, []);
 
   const navigate = useNavigate();

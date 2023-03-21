@@ -36,7 +36,7 @@ function NavMenu() {
           {navLinks.map((link) => (
             <li key={link.id} className="nav-item">
               <a href={link.url} className="nav-link" onClick={handleToggle}>
-                <text id="text"> {link.label} </text>{" "}
+                <div id="text"> {link.label} </div>{" "}
               </a>
             </li>
           ))}
