@@ -60,3 +60,14 @@ of time and resources required for the company in order to do this project.
 - Updated the Jira board and user stories
 - Decided to screenshot my daily VSCode activity and upload it to the repository as a proof of work
 
+> ## **20/03/2023**
+- Delayed Sprint meeting due to client availability
+- Implemented routing for better navigation
+- Routing kept the scroll from previous page,
+created a custom hook to reset the scroll on page change
+- Created the result page with two states, success and error
+- Navigation is very stiff and sudden, implemented a fade transition (will be replaced with the loading transition)
+- Implemented desktop styling for all the pages in accordance with the Figma design
+- Removed the carousel as it was causing bugs in the desktop version.
+- Styled the error and success page in accordance with the Figma design
+- Implemented react slick in both mobile and desktop version for the carosoul(in progress)

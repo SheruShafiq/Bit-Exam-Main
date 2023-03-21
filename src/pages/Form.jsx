@@ -8,6 +8,7 @@ import image3 from "../images/carousel/3.png";
 import Form from "../components/FormComponent";
 import "../styles/FormPage.css";
 import "../../node_modules/react-slick/lib/";
+import ProcessView from "../components/ProcessView";
 
 function App() {
   const settings = {
@@ -24,13 +25,7 @@ function App() {
       <div id="titleApp">
         <Title titleText="Solliciteren" subText="Go for IT" />
       </div>
-      <div id="Car">
-        <Slider {...settings}>
-          <img src={image1} alt="lmao" />
-          <img src={image2} alt="lmao" />
-          <img src={image3} alt="lmao" />
-        </Slider>
-      </div>
+      <ProcessView />
       <div id="formPage">
         <div id="FormComponent">
           <Form />

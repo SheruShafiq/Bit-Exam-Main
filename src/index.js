@@ -7,7 +7,7 @@ import ProcessView from "./components/ProcessView";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <ProcessView />
+    <App />
   </React.StrictMode>
 );
 

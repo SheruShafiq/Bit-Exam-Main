@@ -32,11 +32,10 @@ function FormComponent() {
     }
   };
   const textFieldProps = [
-    { type: "text", name: "name", id: "name", label: "Naam" },
+    { type: "text", name: "name", label: "Naam" },
     {
       type: "date",
       name: "date",
-      id: "date",
       label: "Geboortedatum",
       focused: true,
       sx: {
@@ -67,26 +66,23 @@ function FormComponent() {
         },
       },
     },
-    { type: "email", name: "email", id: "email", label: "Email" },
-    { type: "tel", name: "tel", id: "tel", label: "Telefoon" },
-    { type: "url", name: "github", id: "github", label: "GitHub" },
-    { type: "url", name: "linkdin", id: "linkdin", label: "Linkdin" },
+    { type: "email", name: "email", label: "Email" },
+    { type: "tel", name: "tel", label: "Telefoon" },
+    { type: "url", name: "github", label: "GitHub" },
+    { type: "url", name: "linkdin", label: "Linkdin" },
     {
       type: "url",
       name: "portfolio",
-      id: "portfolio",
       label: "Portfolio website",
     },
     {
       type: "text",
       name: "Opleiding",
-      id: "Opleiding",
       label: "Opleiding",
     },
     {
       type: "file",
       name: "Solicitatie brief",
-      id: "Solicitatiebrief",
       label: "Solicitatie brief",
 
       sx: {
@@ -110,7 +106,6 @@ function FormComponent() {
     {
       type: "file",
       name: "CV uploaden",
-      id: "CVuploaden",
       label: "CV uploaden",
 
       sx: {
@@ -134,63 +129,156 @@ function FormComponent() {
     {
       type: "textarea",
       name: "Hoe heb je ons gevonden?",
-      id: "Hoehebjeonsgevonden?",
       label: "Hoe heb je ons gevonden?",
     },
   ];
 
+  const half = Math.ceil(textFieldProps.length / 2);
   return (
-    <div className="Form">
-      <form className="contact__form" onSubmit={sendEmail}>
-        {textFieldProps.map((textField) => (
-          <TextField
-            // x
-            key={textField.id}
-            variant="standard"
-            placeholder=""
-            InputLabelProps={{
-              style: { fontFamily: "Poppins", color: "white" },
-            }}
-            inputProps={{
-              style: {
-                fontFamily: "Poppins",
+    <>
+      <div className="FormMobile">
+        <form className="contact__form" onSubmit={sendEmail}>
+          {textFieldProps.map((textField) => (
+            <TextField
+              // x
+              key={textField.id}
+              variant="standard"
+              placeholder=""
+              InputLabelProps={{
+                style: { fontFamily: "Poppins", color: "white" },
+              }}
+              inputProps={{
+                style: {
+                  fontFamily: "Poppins",
+                  color: "white",
+                  marginTop: "0.5rem",
+                },
+              }}
+              sx={{
+                input: { color: "white" },
+                width: "100%",
+                marginTop: "1rem",
                 color: "white",
-                marginTop: "0.5rem",
-              },
-            }}
-            sx={{
-              input: { color: "white" },
-              width: "100%",
-              marginTop: "1rem",
-              color: "white",
-              "& .MuiInput-underline:after": {
-                borderBottomColor: " rgb(255,255,255, 0.3)",
-                borderBottomWidth: "1px",
-              },
-              "& .MuiInput-underline:before": {
-                borderBottomWidth: "1px",
-                borderBottomColor: " rgb(255,255,255, 0.3)",
-              },
-            }}
-            {...textField}
-          />
-        ))}
-        <div id="inputFields">
-          <input
-            type="submit"
-            value="Verzenden"
-            id="submitForm"
-            onClick={handleButtonClick}
-          />
-          {isLoading ? (
-            <div id="submitFormProcessing">
-              <CountUp delay={1} end={100} />
-              <p> % </p>
+                "& .MuiInput-underline:after": {
+                  borderBottomColor: " rgb(255,255,255, 0.3)",
+                  borderBottomWidth: "1px",
+                },
+                "& .MuiInput-underline:before": {
+                  borderBottomWidth: "1px",
+                  borderBottomColor: " rgb(255,255,255, 0.3)",
+                },
+              }}
+              {...textField}
+            />
+          ))}
+          <div id="inputFields">
+            <input
+              type="submit"
+              value="Verzenden"
+              id="submitForm"
+              onClick={handleButtonClick}
+            />
+            {isLoading ? (
+              <div id="submitFormProcessing">
+                <CountUp delay={1} end={100} />
+                <p> % </p>
+              </div>
+            ) : null}
+          </div>
+        </form>
+      </div>
+
+      <div className="FormDesktop">
+        <form className="contact__form" onSubmit={sendEmail}>
+          <div id="firstHalf">
+            {textFieldProps.slice(0, half).map((textField) => (
+              <TextField
+                // x
+                key={textField.id}
+                variant="standard"
+                placeholder=""
+                id="inputField"
+                InputLabelProps={{
+                  style: { fontFamily: "Poppins", color: "white" },
+                }}
+                inputProps={{
+                  style: {
+                    fontFamily: "Poppins",
+                    color: "white",
+                    marginTop: "0.5rem",
+                  },
+                }}
+                sx={{
+                  input: { color: "white" },
+                  width: "768px",
+                  marginTop: "1rem",
+                  color: "white",
+                  "& .MuiInput-underline:after": {
+                    borderBottomColor: " rgb(255,255,255, 0.3)",
+                    borderBottomWidth: "1px",
+                  },
+                  "& .MuiInput-underline:before": {
+                    borderBottomWidth: "1px",
+                    borderBottomColor: " rgb(255,255,255, 0.3)",
+                  },
+                }}
+                {...textField}
+              />
+            ))}
+          </div>
+          <div id="secondHalf">
+            {textFieldProps.slice(half).map((textField) => (
+              <TextField
+                // x
+                key={textField.id}
+                variant="standard"
+                placeholder=""
+                InputLabelProps={{
+                  style: { fontFamily: "Poppins", color: "white" },
+                }}
+                inputProps={{
+                  style: {
+                    fontFamily: "Poppins",
+                    color: "white",
+                    marginTop: "0.5rem",
+                  },
+                }}
+                sx={{
+                  input: { color: "white" },
+                  width: "768px",
+                  marginTop: "1rem",
+                  color: "white",
+                  "& .MuiInput-underline:after": {
+                    borderBottomColor: " rgb(255,255,255, 0.3)",
+                    borderBottomWidth: "1px",
+                  },
+                  "& .MuiInput-underline:before": {
+                    borderBottomWidth: "1px",
+                    borderBottomColor: " rgb(255,255,255, 0.3)",
+                  },
+                }}
+                {...textField}
+              />
+            ))}
+            {/* These are the submit buttons that switch depending on the state */}
+            <div id="inputFields">
+              <input
+                type="submit"
+                value="Verzenden"
+                id="submitForm"
+                onClick={handleButtonClick}
+              />
+              {isLoading ? (
+                <div id="submitFormProcessing">
+                  <CountUp delay={1} end={100} />
+                  <p> % </p>
+                </div>
+              ) : null}
             </div>
-          ) : null}
-        </div>
-      </form>
-    </div>
+          </div>
+        </form>
+      </div>
+    </>
   );
 }
 

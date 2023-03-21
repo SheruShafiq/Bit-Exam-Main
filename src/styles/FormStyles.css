@@ -73,25 +73,18 @@ input[type="file"]::file-selector-button {
   padding: 1rem;
   padding-bottom: 5rem;
   min-height: 1200px;
-  position: relative;
-
-  margin: 0 auto;
-  z-index: 1;
-  max-width: 500px;
+  width: 380px;
 }
 @media only screen and (min-width: 768px) {
   .contact__form {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 5rem;
     padding: 1rem;
     padding-bottom: 5rem;
     min-height: 1200px;
-    position: relative;
-
-    margin: 0 auto;
-    z-index: 1;
-    max-width: 500px;
+    max-width: 768px;
   }
 }

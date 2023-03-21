@@ -5,7 +5,7 @@ import "../App.css";
 import "../styles/ErrorPage.css";
 function Error() {
   return (
-    <>
+    <div id="resultParent">
       <div id="titleApp">
         <Title titleText="Error..." subText="Probeer opnieuw" />
       </div>
@@ -57,7 +57,7 @@ function Error() {
           </svg>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
