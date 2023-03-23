@@ -51,7 +51,7 @@ of time and resources required for the company in order to do this project.
 - Custom animations were glitching on mobile, switched to react-slideshow-image library
 - Optimized the carousel for mobile
 - Fixed the header not being fixed on application form page (error was due to z-index)
-- Created custom input components for the form\
+- Created custom input components for the form
 > ## **15/03/2023**
 - Custom made input components weren't working so implemented and customized Material UI's input components
 - Updated the API to use the new input components
@@ -84,4 +84,7 @@ created a custom hook to reset the scroll on page change
 - Updated the Jira Board and screenshotted the discord activity
 - Contacted the client to schedule the next meeting
 - Finished the second sprint and started the third sprint
-- 
+> ## **23/03/2023**
+- Client reported some styling errors on their end (Screenshots in clientReport folder)
+- Fixed the styling errors and tested them on build 
+- submitted the build to the client for approval
