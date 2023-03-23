@@ -4,6 +4,9 @@
 4. De uitvoerende aanpak voor het testen (handmatig testen/geautomatiseerd testen of een combinatie van beide)
 5. De test cases en scenarios die je gaat gebruiken om elke user story te testen. Dit kunnen er meerdere zijn per user story.
 
+Testing Tool: Cypress
+
+
 > # **List of stories that will be tested:**
 > **[CP207-63](https://xr-vision.atlassian.net/browse/CP2077-63)** : As a user I want a loading screen animation on the landing page just like the parent website.
 Scopes: 
