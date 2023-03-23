@@ -18,7 +18,8 @@
     display: none;
   }
   .FormDesktop {
-    display: block;
+    display: flex;
+    justify-content: center;
   }
   #FormComponent {
     background-color: black;
