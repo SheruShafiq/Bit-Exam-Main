@@ -1,5 +1,5 @@
 #gallerView {
-  max-width: 580px;
+  scale: 90%;
 }
 .galleryImages {
   text-align: center;
@@ -26,12 +26,13 @@ img {
   margin-bottom: 3px;
 }
 .slick-slider.center.slick-initialized {
-  margin-bottom: -5px;
+  margin-bottom: -18px;
 }
 @media only screen and (min-width: 768px) {
   #gallerView {
-    max-width: 800px;
+    scale: 100%;
   }
+
   .galleryImages {
     text-align: center;
   }

@@ -6,7 +6,8 @@
   justify-content: center;
 }
 .FormMobile {
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 .FormDesktop {
   display: none;

@@ -71,10 +71,11 @@ input[type="file"]::file-selector-button {
   align-items: flex-start;
   justify-content: space-around;
   padding: 1rem;
-
+  margin-left: 1rem;
+  margin-right: 1rem;
   padding-bottom: 5rem;
   min-height: 1200px;
-  width: max-content;
+  width: 70%;
 }
 @media only screen and (min-width: 768px) {
   .contact__form {

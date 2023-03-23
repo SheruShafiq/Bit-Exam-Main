@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -24,45 +24,54 @@ for (let i = 0; i < 21; i++) {
     </div>
   );
 }
-export default class CenterMode extends Component {
-  render() {
-    const settings = {
-      dots: false,
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      className: "center",
-      centerMode: true,
-      centerPadding: "720px",
-      speed: 500,
-      autoplay: true,
-      speech: 1,
-      cssEase: "linear",
-      autoplaySpeed: 2000,
-      responsive: [
-        {
-          breakpoint: 728,
-          settings: {
-            centerPadding: "110px",
-            dots: false,
-            infinite: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            className: "center",
-            centerMode: true,
-            speed: 500,
-            autoplay: true,
-            speech: 1,
-            cssEase: "linear",
-            autoplaySpeed: 2000,
-          },
+
+function ProcessView() {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const galleryWidth = windowWidth < 768 ? 560 : 1900;
+  const settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    className: "center",
+    centerMode: true,
+    centerPadding: "720px",
+    speed: 500,
+    autoplay: true,
+    speech: 1,
+    cssEase: "linear",
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 728,
+        settings: {
+          centerPadding: "110px",
+          dots: false,
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          className: "center",
+          centerMode: true,
+          speed: 500,
+          autoplay: true,
+          speech: 1,
+          cssEase: "linear",
+          autoplaySpeed: 2000,
         },
-      ],
-    };
-    return (
-      <div id="gallerView">
-        <Slider {...settings}>{galleryItems}</Slider>
-      </div>
-    );
-  }
+      },
+    ],
+  };
+  return (
+    <div id="gallerView" style={{ width: `${galleryWidth}px` }}>
+      <Slider {...settings}>{galleryItems}</Slider>
+    </div>
+  );
 }
+export default ProcessView;

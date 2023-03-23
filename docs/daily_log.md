@@ -71,7 +71,7 @@ created a custom hook to reset the scroll on page change
 - Removed the carousel as it was causing bugs in the desktop version.
 - Styled the error and success page in accordance with the Figma design
 - Implemented react slick in both mobile and desktop version for the carosoul(in progress)
-> ## **20/03/2023**
+> ## **21/03/2023**
 - Succesfully implemented React Carosoul in both mobile and desktop version
 - Created a navigation menue in accordance with the parent website
 - Styled the navigation menue for both mobile and desktop version
@@ -84,3 +84,4 @@ created a custom hook to reset the scroll on page change
 - Updated the Jira Board and screenshotted the discord activity
 - Contacted the client to schedule the next meeting
 - Finished the second sprint and started the third sprint
+- 
