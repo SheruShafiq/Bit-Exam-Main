@@ -15,12 +15,12 @@ function FormComponent() {
     e.preventDefault();
     SetIsLoading(true);
     try {
-      // await emailjs.sendForm(
-      //   "service_nh0au8c",
-      //   "template_k07o36l",
-      //   e.target,
-      //   "WaOT6BUTbyQbhGR8B"
-      // );
+      await emailjs.sendForm(
+        "service_nh0au8c",
+        "template_k07o36l",
+        e.target,
+        "WaOT6BUTbyQbhGR8B"
+      );
       await new Promise((resolve) => setTimeout(resolve, 3000)); // 3 sec
       console.log("Email sent");
       SetIsLoading(false);

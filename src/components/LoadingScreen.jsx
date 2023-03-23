@@ -4,7 +4,7 @@ import CountUp from "react-countup";
 
 function LoadingScreen() {
   const [width, setWidth] = useState(2);
-  const [opacity, setOpacity] = useState(0);
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setWidth(60);
