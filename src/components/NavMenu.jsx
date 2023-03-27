@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import "../styles/NavMenuStyles.css";
+
 function NavMenu() {
+  // Define the state variable to keep track of the menu's open/closed state.
   const [isOpen, setIsOpen] = useState(false);
 
+  // Toggle the menu's open/closed state.
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
 
+  // Define an array of navigation links with their labels and URLs.
   const navLinks = [
     { id: 1, label: "Home", url: "https://headline-interactive.nl/" },
     { id: 2, label: "Cases", url: "https://headline-interactive.nl/cases/" },
@@ -22,6 +26,8 @@ function NavMenu() {
       url: "https://headline-interactive.nl/contact/",
     },
   ];
+
+  // Render the menu with the navigation links.
   return (
     <>
       <button className="button" id="menuButton" onClick={handleToggle}>

@@ -1,9 +1,13 @@
+// Import React and CSS styles
 import React from "react";
 import "../styles/LandingPageContentStyles.css";
 
+// Define the LandingPageContent component
 function LandingPageContent() {
   return (
+    // Wrap all the content in a parent div with ID parentContent
     <div id="parentContent">
+      {/* First paragraph */}
       <div>
         <p id="textBase">
           Ben jij een backend programmeur met overzicht? Kun jij al voor je zien
@@ -13,6 +17,7 @@ function LandingPageContent() {
           willen we graag met je praten over een baan bij ons.
         </p>
       </div>
+      {/* Second paragraph */}
       <div>
         <p id="textBase">
           De eindgebruiker die wij met onze code bedienen is een mens van vlees
@@ -26,6 +31,7 @@ function LandingPageContent() {
           kleuren en aantallen.
         </p>
       </div>
+      {/* Third paragraph */}
       <div>
         <p id="textBase">
           Onze klanten leggen grote opdrachten bij ons neer, omdat ze vertrouwen
@@ -36,9 +42,10 @@ function LandingPageContent() {
           Teamspelers dus, die graag de beste code opleveren.
         </p>
       </div>
+      {/* Fourth paragraph */}
       <div>
         <strong id="secondaryTitle">Dit ben jij</strong>
-
+        php Copy code
         <ul>
           <li id="textBase">
             Jij wilt elke week iets nieuws leren en deelt dat graag met je
@@ -51,6 +58,7 @@ function LandingPageContent() {
           </li>
         </ul>
       </div>
+      {/* Fifth paragraph */}
       <div>
         <strong id="secondaryTitle">Dit kun je bij ons</strong>
 

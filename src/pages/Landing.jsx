@@ -7,24 +7,30 @@ import { useNavigate } from "react-router-dom";
 import "../styles/LandingPageRoute.css";
 import LoadingScreen from "../components/LoadingScreen";
 
-function App() {
+function LandingPage() {
+  // Disable scrolling on mount
   useEffect(() => {
-    // Disable scrolling on mount
     window.scrollTo(0, 0);
     document.body.style.overflow = "hidden";
 
-    // Enable scrolling after 5 seconds
-    setTimeout(() => {
+    // Enable scrolling after 3 seconds
+    const timeoutId = setTimeout(() => {
       document.body.style.overflow = "auto";
     }, 3000);
+
+    // Clear the timeout when the component unmounts to avoid memory leaks
+    return () => clearTimeout(timeoutId);
   }, []);
 
   const navigate = useNavigate();
+
   const handleButtonClick = () => {
     navigate("/form");
   };
+
   return (
     <>
+      {/* Show a loading screen while the app is loading */}
       <div id="LoadingScreenLanding">
         <LoadingScreen />
       </div>
@@ -52,4 +58,4 @@ function App() {
   );
 }
 
-export default App;
+export default LandingPage;

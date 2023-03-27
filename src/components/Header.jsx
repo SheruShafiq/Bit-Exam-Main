@@ -1,13 +1,19 @@
+// Import necessary libraries and files
 import React from "react";
 import logo from "../images/logo.png";
-import "../styles/HeaderStyles.css";
 import Nav from "./NavMenu";
+import "../styles/HeaderStyles.css";
+
+// Define the Header component
 function Header() {
   return (
     <div id="header">
+      {/* Render the logo and link it to the homepage */}
       <a href="https://headline-interactive.nl/">
         <img id="logo" src={logo} alt="Logo" />
       </a>
+      css Copy code
+      {/* Render the navigation menu */}
       <div id="menu">
         <Nav />
       </div>
@@ -15,4 +21,5 @@ function Header() {
   );
 }
 
+// Export the Header component for use in other parts of the application
 export default Header;

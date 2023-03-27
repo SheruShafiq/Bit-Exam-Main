@@ -1,4 +1,10 @@
-import React from "react";
+//This code is used to send an email to the user when they submit the contact form
+//EmailJS is used to send the email
+//The email is sent to the user's email address
+//The email is sent to the user's name
+//The email is sent to the user's message
+
+import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import "../styles/FormStyles.css";
 import TextField from "@mui/material/TextField";

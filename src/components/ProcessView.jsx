@@ -13,28 +13,27 @@ const images = [
   { src: image3, alt: "lmao", text: "Kennis Making" },
 ];
 
-const galleryItems = [];
-
-for (let i = 0; i < 21; i++) {
-  const image = images[i % 3];
-  galleryItems.push(
-    <div className="galleryImages">
-      <img src={image.src} alt={image.alt} />
-      <div className="centered">{image.text}</div>
-    </div>
-  );
-}
+// Generate gallery items based on images array
+const galleryItems = images.map((image) => (
+  <div className="galleryImages">
+    <img src={image.src} alt={image.alt} />
+    <div className="centered">{image.text}</div>
+  </div>
+));
 
 function ProcessView() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
+    // Add event listener to update window width on resize
     const handleResize = () => setWindowWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Set gallery width based on window size
   const galleryWidth = windowWidth < 768 ? 560 : 1900;
+
   const settings = {
     dots: false,
     infinite: true,
@@ -68,10 +67,12 @@ function ProcessView() {
       },
     ],
   };
+
   return (
     <div id="gallerView" style={{ width: `${galleryWidth}px` }}>
       <Slider {...settings}>{galleryItems}</Slider>
     </div>
   );
 }
+
 export default ProcessView;

@@ -4,15 +4,21 @@ import Title from "../components/Title";
 import "../App.css";
 import Error from "../components/Error";
 
+// The component to show a success message
 function Succesful({ error }) {
+  // If there is an error, show the Error component instead
   if (error) {
     return <Error />;
   }
+
+  // Otherwise, show the success message with a checkmark icon
   return (
     <div id="resultParent">
+      {/* The title */}
       <div id="titleApp">
         <Title titleText="Verzonden" subText="Die is binnen" />
       </div>
+      {/* The checkmark icon */}
       <div id="checkMark">
         <svg
           className="checkmark"
