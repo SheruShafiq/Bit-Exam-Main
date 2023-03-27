@@ -38,12 +38,12 @@
     opacity: 0;
     transform: translateY(100%);
     visibility: hidden;
+    pointer-events: none;
   }
   50% {
     opacity: 0.5;
   }
   100% {
-    pointer-events: none;
     opacity: 1;
     transform: translateY(0);
   }
