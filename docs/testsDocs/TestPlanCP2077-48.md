@@ -12,7 +12,12 @@ The goal of this test is to ensure that the website is responsive and renders co
 ### **Test Environment:**
 
 - Browser: Chrome version 95
-- Operating System: Windows 10, Android 12
+- Operating System: Windows 10
+- Screen resolution: 1920 x 1080
+- React version: 17.0.2
+- Cypress version: 8.3.0
+- Dependencies: emailjs-com version 3.2.0
+-
 - **Screen resolutions:**
   1.  Desktop: 1920 x 1080
   2.  Mobile: 375 x 812

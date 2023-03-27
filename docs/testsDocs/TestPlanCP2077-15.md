@@ -11,7 +11,11 @@ The goal of the tests is to ensure that the Title component renders correctly an
 
 ### **Test Environment:**
 
-The component will be tested in a React testing environment using Jest.
+- Browser: Chrome version 95
+- Operating System: Windows 10
+- Screen resolution: 1920 x 1080
+- React version: 17.0.2
+- Cypress version: 8.3.0
 
 ### **Test Approach:**
 

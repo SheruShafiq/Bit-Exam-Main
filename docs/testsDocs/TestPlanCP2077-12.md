@@ -1,5 +1,7 @@
 > **E2E Test Plan:**
+
 ### **Scopes:**
+
 - The form is rendered correctly on devices above 768px
 - The form is rendered correctly on devices below 768px
 - Form fields are interactable
@@ -8,21 +10,28 @@
 - When loading is completed you are navigated to the result page
 - The email is sent to the correct email address
 - The email contains the correct information
+
 ### **Goal**
+
 - The goal of this E2E test is to ensure that the website's contact form is working as intended and that users can successfully submit their information and receive a confirmation message.
 
 ### **Test Environment:**
+
 - Browser: Chrome version 95
 - Operating System: Windows 10
 - Screen resolution: 1920 x 1080
 - React version: 17.0.2
 - Cypress version: 8.3.0
 - Dependencies: emailjs-com version 3.2.0
+
 ### **Test Approach:**
+
 The E2E test will use the Cypress testing framework to automate user actions and assertions.
 The test will be run on a local development environment.
 Test data will be generated using a mock API service provided by the Cypress Engine.
+
 ### **Test Cases:**
+
 - Verify that the website loads successfully and all elements are visible.
 - Fill out the contact form with valid data and submit it.
 - Verify that a success message is displayed indicating that the message was sent successfully.
@@ -42,6 +51,7 @@ Test data will be generated using a mock API service provided by the Cypress Eng
 > **Component Test Plan:**
 
 ### **Scopes:**
+
 - Check if the TextField component is rendered properly for all the form fields
 - Verify if the TextField components have the correct properties such as id, type, name, label, sx, etc.
 - Verify if the TextField components can handle user inputs correctly
@@ -50,15 +60,26 @@ Test data will be generated using a mock API service provided by the Cypress Eng
 - Check if the emailjs.sendForm method is called with the correct parameters
 - Test if the navigate function is called with the correct parameters after the form submission is completed
 - Verify if the loading and error states are updated correctly
+
 ### **Goal:**
+
     The goal of this test plan is to ensure that the Contact Us form component is functioning as expected and meeting the requirements of the user story.
 
 ### **Test Environment:**
-- The component will be tested in a React testing environment using Cypress.
+
+- Browser: Chrome version 95
+- Operating System: Windows 10
+- Screen resolution: 1920 x 1080
+- React version: 17.0.2
+- Cypress version: 8.3.0
+- Dependencies: emailjs-com version 3.2.0
 
 ### **Test Approach:**
+
 - The test approach will involve simulating user interactions with the Contact Us form component and verifying the expected behavior using Cypress test assertions. The tests will be automated and run in a headless browser.
+
 ### **Test Cases**
+
 - Test that all form fields are rendered properly and have the correct attributes such as id, type, name, label, and sx.
 - Test that user inputs are handled correctly and the values are updated in the form state.
 - Test that the form submission is successful and an email is sent when all fields are filled correctly and the submit button is clicked.
@@ -70,36 +91,38 @@ Test data will be generated using a mock API service provided by the Cypress Eng
 - Test that the emailjs.sendForm method is called with the correct parameters when the form is submitted.
 - Test that the navigate function is called with the correct parameters after the form submission is completed.
 - Test that the loading and error states are updated correctly.
+
 ### **Place holder cypress test file:**
+
 ```js
-describe('Solicitatie Form', () => {
+describe("Solicitatie Form", () => {
   beforeEach(() => {
     // Navigate to the Contact Us page
-    cy.visit('/contact-us')
-  })
+    cy.visit("/contact-us");
+  });
 
-  it('renders form fields', () => {
+  it("renders form fields", () => {
     // Test that all form fields are rendered properly
-  })
+  });
 
-  it('handles user inputs correctly', () => {
+  it("handles user inputs correctly", () => {
     // Test that user inputs are handled correctly
-  })
+  });
 
-  it('submits form successfully', () => {
+  it("submits form successfully", () => {
     // Test that the form submission is successful and an email is sent when all fields are filled correctly and the submit button is clicked
-  })
+  });
 
-  it('displays loading indicator', () => {
+  it("displays loading indicator", () => {
     // Test that the loading indicator is displayed while the email is being sent and disappears once the email is sent
-  })
+  });
 
-  it('displays error message', () => {
+  it("displays error message", () => {
     // Test that the error message is displayed when an error occurs during the submission process
-  })
+  });
 
-  it('navigates to result page', () => {
+  it("navigates to result page", () => {
     // Test that the navigation to the result page is working as expected after the email is sent successfully
-  })
-})
+  });
+});
 ```
