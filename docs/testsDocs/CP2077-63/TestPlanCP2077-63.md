@@ -73,56 +73,81 @@ The goal of this test is to make sure that the loading screen is visible on the 
 - Test that the component's "Loaded" text is displayed.
 - Test that the component unmounts without errors.
 
-Place holder cypress test file:
+> **Component Test Code:**
 
 ```js
-describe("LoadingScreen Component", () => {
-  it("renders without errors", () => {
+/* eslint-disable no-undef */
+import React from "react";
+import LoadingScreen from "./LoadingScreen";
+
+describe("LoadingScreen Component Test", () => {
+  beforeEach(() => {
     cy.mount(<LoadingScreen />);
   });
 
-  it("matches snapshot", () => {
-    cy.wrap(<LoadingScreen />).toMatchSnapshot();
+  it("renders without errors", () => {
+    cy.get("#overlay").should("exist");
   });
 
   it("has an ID of overlay", () => {
     cy.get("#overlay").should("exist");
   });
 
-  it("has a progress bar that starts at 2% and increases to 60% over 4 seconds", () => {
-    cy.get("#overlay div").should("have.css", "width", "2%");
-    cy.wait(4000);
-    cy.get("#overlay div").should("have.css", "width", "60%");
-  });
-
-  it("has a progress bar with a height of 1px, white background color, and transition duration of 4 seconds, and a margin top and bottom of 20px", () => {
-    cy.get("#overlay div").should("have.css", "height", "1px");
-    cy.get("#overlay div").should(
+  it("Is styled correc", () => {
+    cy.get("#loadLine").should("have.css", "height", "1px");
+    cy.get("#loadLine").should(
       "have.css",
       "background-color",
       "rgb(255, 255, 255)"
     );
-    cy.get("#overlay div").should("have.css", "transition-duration", "4s");
-    cy.get("#overlay div").should("have.css", "margin-top", "20px");
-    cy.get("#overlay div").should("have.css", "margin-bottom", "20px");
+    cy.get("#loadLine").should("have.css", "transition-duration", "4s");
+    cy.get("#loadLine").should("have.css", "margin-top", "20px");
+    cy.get("#loadLine").should("have.css", "margin-bottom", "20px");
   });
 
-  it("has a count-up element with a delay of 0, an end value of 100, and a duration of 4 seconds", () => {
-    cy.get("#overlay div > div > span").should("have.attr", "data-delay", "0");
-    cy.get("#overlay div > div > span").should("have.attr", "data-end", "100");
-    cy.get("#overlay div > div > span").should(
-      "have.attr",
-      "data-duration",
-      "4"
-    );
+  it("has a count-up element with with an end value of 100", () => {
+    cy.wait(4000);
+    cy.get("#count > span").should("have.text", "100");
   });
 
   it("displays 'Loaded' text", () => {
     cy.get("#textItem").should("have.text", "Loaded");
   });
+});
+```
 
-  it("unmounts without errors", () => {
-    cy.unmount(<LoadingScreen />);
+> **e2e Test Code:**
+
+```js
+/* eslint-disable no-undef */
+
+describe("LoadingScreen e2e Test", () => {
+  beforeEach(() => {
+    cy.visit("/");
+  });
+  it("should be visible on the landing page of the website", () => {
+    cy.get("#overlay").should("be.visible");
+  });
+
+  it("should disable interaction with the website while the animation is playing", () => {
+    cy.get("#overlay").should("be.visible");
+    cy.get("#LandingParent").should("have.css", "pointer-events", "none");
+  });
+
+  it("should enable interaction with the website once the animation is over", () => {
+    cy.get("#overlay").should("be.visible");
+    cy.wait(5000); // Wait for the animation to complete
+    cy.get("#LoadingScreenLanding").should(
+      "have.css",
+      "pointer-events",
+      "auto"
+    );
+  });
+
+  it("should not be visible anymore once the animation is over", () => {
+    cy.get("#overlay").should("be.visible");
+    cy.wait(5000); // Wait for the animation to complete
+    cy.get("#overlay").should("not.be.visible");
   });
 });
 ```
