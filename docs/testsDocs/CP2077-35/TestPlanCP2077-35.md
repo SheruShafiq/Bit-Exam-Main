@@ -13,7 +13,7 @@ The goal of this test is to ensure that the header component functions as expect
 
 ### **Test Environment:**
 
-- Browser: Chrome version 95
+- Browser: Chrome Version: 111.0.5563.111
 - Operating System: Windows 10
 - Screen resolution: 1920 x 1080
 - React version: 17.0.2

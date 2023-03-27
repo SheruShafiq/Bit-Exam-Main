@@ -6,12 +6,16 @@
 
 | Test Type       | Status                                                            |
 | --------------- | ----------------------------------------------------------------- |
-| E2E Tests       | ![pass](https://via.placeholder.com/15/00ff00/000000?text=+) PASS |
-| Component Tests | ![fail](https://via.placeholder.com/15/ff0000/000000?text=+) FAIL |
+| E2E Tests       | ![PASS](https://via.placeholder.com/15/00ff00/000000?text=+) PASS |
+| Component Tests | ![PASS](https://via.placeholder.com/15/00ff00/000000?text=+) PASS |
 
 ### - **Issues encountered during testing**:
 
+All of the tests were failing because during the component test, the component wasn't being mounted before each test. One of the tests was failing because I was checking the attributes instead of the text.
+
 ### - **Conclusions**:
+
+The component is working and behaving as expected.
 
 > ## 2. **[CP2077-12]**
 
@@ -26,3 +30,6 @@
 > ## 7. **[CP2077-42]**
 
 > ## 8. **[CP2077-48]**
+
+<!-- ![pass](https://via.placeholder.com/15/00ff00/000000?text=+) PASS
+![fail](https://via.placeholder.com/15/ff0000/000000?text=+) FAIL -->

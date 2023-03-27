@@ -11,4 +11,4 @@
 
 > Started writing and executing the e2e test.
 
-- All the tests: SUCCESSFUL
+- All the tests were SUCCESSFUL

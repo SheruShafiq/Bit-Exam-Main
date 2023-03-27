@@ -10,12 +10,12 @@ To ensure that the ProcessView component functions as expected by verifying that
 
 ### **Test Environment:**
 
-- Browser: Chrome version 95
+- Browser: Chrome Version: 111.0.5563.111
 - Operating System: Windows 10
 - Screen resolution: 1920 x 1080
 - React version: 17.0.2
 - Cypress version: 8.3.0
-- Dependencies: emailjs-com version 3.2.0
+- Dependencies: React-Slick
 
 ### **Test Approach:**
 
@@ -38,12 +38,12 @@ To ensure that the ProcessView component renders all images correctly, the slide
 
 ### **Test Environment:**
 
-- Browser: Chrome version 95
+- Browser: Chrome Version: 111.0.5563.111
 - Operating System: Windows 10
 - Screen resolution: 1920 x 1080
 - React version: 17.0.2
 - Cypress version: 8.3.0
-- Dependencies: emailjs-com version 3.2.0
+- Dependencies: React-Slick
 
 ### **Test Approach:**
 

@@ -13,12 +13,12 @@ The goal of this test is to make sure that the loading screen is visible on the 
 
 ### **Test Environment:**
 
-- Browser: Chrome version 95
+- Browser: Chrome Version: 111.0.5563.111
 - Operating System: Windows 10
 - Screen resolution: 1920 x 1080
 - React version: 17.0.2
 - Cypress version: 8.3.0
-- Dependencies: emailjs-com version 3.2.0
+- Dependencies: react-router-dom version 6.2.1, framer-motion version 4.1.17
 
 ### **Test Approach:**
 
@@ -53,12 +53,12 @@ The goal of this test is to make sure that the loading screen is visible on the 
 
 ### **Test Environment:**
 
-- Browser: Chrome version 95
+- Browser: Chrome Version: 111.0.5563.111
 - Operating System: Windows 10
 - Screen resolution: 1920 x 1080
 - React version: 17.0.2
 - Cypress version: 8.3.0
-- Dependencies: emailjs-com version 3.2.0
+- Dependencies: react-router-dom version 6.2.1, framer-motion version 4.1.17
 
 ### **Test Approach:**
 

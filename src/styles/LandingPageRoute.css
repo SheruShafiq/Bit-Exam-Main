@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   animation: fadeInAndSlideUp 1s ease-out 4s forwards;
-  pointer-events: none;
 }
 #LoadingScreenLanding {
   position: fixed;
@@ -27,6 +26,7 @@
     opacity: 0.5;
   }
   100% {
+    pointer-events: auto;
     opacity: 0;
     transform: translateY(-100%);
     visibility: hidden;
@@ -43,6 +43,7 @@
     opacity: 0.5;
   }
   100% {
+    pointer-events: none;
     opacity: 1;
     transform: translateY(0);
   }
