@@ -101,3 +101,6 @@
 - Succesfully component tested the loading screen component
 - Sucessfully e2e tested the loading screen component
 - Documented both tests
+- Documented all the components
+- Generated a general readme for the project
+- Refactored the title component
