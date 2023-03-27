@@ -42,11 +42,7 @@ The goal of this test is to make sure that the loading screen is visible on the 
 
 - Test that the component renders without errors.
 - Test that the component's root element has an ID of "overlay".
-- Test that the component's progress bar element has a width that starts at 2% and increases to 60% over 4 seconds.
-- Test that the component's progress bar element has a height of 1px.
-- Test that the component's progress bar element has a white background color.
-- Test that the component's progress bar element has a transition duration of 4 seconds.
-- Test that the component's progress bar element has a margin top and bottom of 20px.
+- Progress bar is styled correctly
 - Test that the component's count-up element has a delay of 0, an end value of 100, and a duration of 4 seconds.
 - Test that the component's "Loaded" text is displayed.
 - Test that the component unmounts without errors.
@@ -66,20 +62,13 @@ The goal of this test is to make sure that the loading screen is visible on the 
 
 ### **Test Approach:**
 
-- The test approach will be to use snapshot testing and unit testing to verify that the component renders correctly and its functionality works as expected.
+- The test approach will be to use unit testing to verify that the component renders correctly and its functionality works as expected.
 
 ### **Test Cases**
 
-- Snapshot Testing
 - Test that the component renders without errors.
-- Test that the component matches its snapshot.
-- Unit Testing
 - Test that the component's root element has an ID of "overlay".
-- Test that the component's progress bar element has a width that starts at 2% and increases to 60% over 4 seconds.
-- Test that the component's progress bar element has a height of 1px.
-- Test that the component's progress bar element has a white background color.
-- Test that the component's progress bar element has a transition duration of 4 seconds.
-- Test that the component's progress bar element has a margin top and bottom of 20px.
+- Progress bar is styled correctly
 - Test that the component's count-up element has a delay of 0, an end value of 100, and a duration of 4 seconds.
 - Test that the component's "Loaded" text is displayed.
 - Test that the component unmounts without errors.

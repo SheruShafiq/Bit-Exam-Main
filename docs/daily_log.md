@@ -98,3 +98,4 @@
 - Continuing to work on the documentation and tests
 - Completed the list of all the issues that will be tested
 - Writing test plan for each of them.
+- Succesfully component tested the loading screen component

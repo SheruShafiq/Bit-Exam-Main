@@ -19,11 +19,10 @@ The goal of the tests is to ensure that the Title component renders correctly an
 
 ### **Test Approach:**
 
-The test approach will be to use snapshot testing and unit testing to verify that the component renders correctly and displays the correct title text and subtext.
+The test approach will be to use unit testing to verify that the component renders correctly and displays the correct title text and subtext.
 
 ### **Test Cases**
 
-- Snapshot Testing
 - Test that the component renders without errors.
 - Test that the component matches its snapshot.
 - Unit Testing

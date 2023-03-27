@@ -27,7 +27,7 @@ function LoadingScreen() {
         {" "}
         <CountUp delay={0} end={100} duration={4} />
       </div>
-      <div style={lineStyle}></div>
+      <div id="loadLine" style={lineStyle}></div>
       <p id="textItem">Loaded</p>
     </div>
   );

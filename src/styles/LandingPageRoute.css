@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   animation: fadeInAndSlideUp 1s ease-out 4s forwards;
+  pointer-events: none;
 }
 #LoadingScreenLanding {
   position: fixed;
