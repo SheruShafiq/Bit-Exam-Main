@@ -1,4 +1,4 @@
-> **E2E Test Plan**
+>## **E2E Test Plan**
 ### **Scopes:**
 - The animation should be visible on the landing page of the website.
 - While the animation is playing, the user should not be able to interact with the website.
@@ -21,7 +21,7 @@ The goal of this test is to make sure that the loading screen is visible on the 
 - Verify that the loading screen animation does not reappear during subsequent visits to the landing page.
 
 
-> **Component Test Plan:**
+>## **Component Test Plan:**
 - Component Under Test
 - LoadingScreen component
 
