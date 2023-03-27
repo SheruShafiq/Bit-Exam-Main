@@ -11,6 +11,7 @@
    - Child issues to be tested alongside:
      - [CP2077-50](https://xr-vision.atlassian.net/browse/CP2077-50) - Create loading transition in between pages to match the theme
      - [CP2077-38](https://xr-vision.atlassian.net/browse/CP2077-38) - All pages to have dedicated routes and ability to navigate between them
+     - [CP2077-65](https://xr-vision.atlassian.net/browse/CP2077-65) - Create a nav menu in accordance with the parent website.
      - [CP2077-45](https://xr-vision.atlassian.net/browse/CP2077-45) - Add transition when redirecting to a new page
      - [CP2077-46](https://xr-vision.atlassian.net/browse/CP2077-46) - Add auto-scroll to top when redirecting to a new page
 6. [CP2077-15](https://xr-vision.atlassian.net/browse/CP2077-15) - Create a reusable Title component
