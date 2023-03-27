@@ -11,8 +11,13 @@ The goal of this test is to make sure that the loading screen is visible on the 
 - Browser: Chrome version 95
 - Operating System: Windows 10
 - Screen resolution: 1920 x 1080
+- React version: 17.0.2
+- Cypress version: 8.3.0
+- Dependencies: emailjs-com version 3.2.0
 ### **Test Approach:**
-- Use Cypress e2e testing framework to simulate user actions and verify expected behaviors.
+- The E2E test will use the Cypress testing framework to automate user actions and assertions.
+- The test will be run on a local development environment.
+
 ### **Test Cases:**
 - Verify that the landing page contains a loading screen animation upon loading.
 - Verify that the user cannot interact with the website while the animation is playing.
@@ -61,7 +66,8 @@ The goal of this test is to make sure that the loading screen is visible on the 
 - Test that the component unmounts without errors.
 
 Place holder cypress test file:
-```describe("LoadingScreen Component", () => {
+```js
+describe("LoadingScreen Component", () => {
   it("renders without errors", () => {
     cy.mount(<LoadingScreen />);
   });

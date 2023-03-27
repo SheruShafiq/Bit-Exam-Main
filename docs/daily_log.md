@@ -88,3 +88,10 @@ created a custom hook to reset the scroll on page change
 - Client reported some styling errors on their end (Screenshots in clientReport folder)
 - Fixed the styling errors and tested them on build 
 - submitted the build to the client for approval
+> ## **24/03/2023**
+- Setted up testing envoirnment for e2e and unit testing in Cypress 
+- Setting up documentation and tests for the application
+- Completed the documentation for the loadingScreen Component
+> ## **27/03/2023**
+- Continuing to work on the documentation and tests
+- Setted documentation for FormComponent
