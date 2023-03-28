@@ -3,7 +3,7 @@
   padding: 0;
   overflow: hidden;
   transition: transform 0.2s;
-  display: block;
+  display: hidden;
   margin-top: 22px;
 }
 .pseudo-text-effect::after {
@@ -37,7 +37,24 @@
   outline: none;
 }
 #menuButtonHeader {
+  display: none;
   font-size: 12px;
   font-family: "Poppins";
   font-weight: 600;
+}
+@media (min-width: 768px) {
+  .pseudo-text-effect {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    transition: transform 0.2s;
+    display: block;
+    margin-top: 22px;
+  }
+  #menuButtonHeader {
+    display: block;
+    font-size: 12px;
+    font-family: "Poppins";
+    font-weight: 600;
+  }
 }
