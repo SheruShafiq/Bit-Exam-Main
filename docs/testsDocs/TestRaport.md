@@ -1,23 +1,38 @@
 # **Tested Stories Summary:**
 
-#### _Check their respective plans for context_
+#### _Check their respective folders for more context_
 
 > ## 1. **[CP2077-63]**
 
-| Test Type       | Status                                                            |
-| --------------- | ----------------------------------------------------------------- |
-| E2E Tests       | ![PASS](https://via.placeholder.com/15/00ff00/000000?text=+) PASS |
-| Component Tests | ![PASS](https://via.placeholder.com/15/00ff00/000000?text=+) PASS |
+| Test Type       | Status                                                            | Type of Test |
+| --------------- | ----------------------------------------------------------------- | ------------ |
+| E2E Tests       | ![PASS](https://via.placeholder.com/15/00ff00/000000?text=+) PASS | Programmed   |
+| Component Tests | ![PASS](https://via.placeholder.com/15/00ff00/000000?text=+) PASS | Programmed   |
 
-### - **Issues encountered during testing**:
+### **Issues encountered during testing**:
 
 All of the tests were failing because during the component test, the component wasn't being mounted before each test. One of the tests was failing because I was checking the attributes instead of the text.
 
-### - **Conclusions**:
+### **Conclusions**:
 
 The component is working and behaving as expected.
 
 > ## 2. **[CP2077-12]**
+
+| Test Type         | Status                                                            | Type of Test |
+| ----------------- | ----------------------------------------------------------------- | ------------ |
+| E2E Tests         | ![PASS](https://via.placeholder.com/15/00ff00/000000?text=+) PASS | Programmed   |
+| Component Tests   | ![PASS](https://via.placeholder.com/15/00ff00/000000?text=+) PASS | Programmed   |
+| Form Output Tests | ![PASS](https://via.placeholder.com/15/00ff00/000000?text=+) PASS | Manual       |
+
+### **Issues encountered during testing**:
+
+Can't test if the input field contains what's inputted because mui isn't supported in cypress. Still can confirm via manual testing
+the fields do infact contain what was typed in.
+
+### **Conclusions**:
+
+Form component is working and behaving as expected. The output matches the input.
 
 > ## 3. **[CP2077-18]**
 

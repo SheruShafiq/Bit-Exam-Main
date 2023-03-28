@@ -144,58 +144,6 @@ function FormComponent() {
   const half = Math.ceil(textFieldProps.length / 2);
   return (
     <>
-      <div className="FormMobile">
-        <form className="contact__form" onSubmit={sendEmail}>
-          {textFieldProps.map((textField) => (
-            <TextField
-              // x
-              key={textField.id}
-              variant="standard"
-              placeholder=""
-              InputLabelProps={{
-                style: { fontFamily: "Poppins", color: "white" },
-              }}
-              inputProps={{
-                style: {
-                  fontFamily: "Poppins",
-                  color: "white",
-                  marginTop: "0.5rem",
-                },
-              }}
-              sx={{
-                input: { color: "white" },
-                width: "100%",
-                marginTop: "1rem",
-                color: "white",
-                "& .MuiInput-underline:after": {
-                  borderBottomColor: " rgb(255,255,255, 0.3)",
-                  borderBottomWidth: "1px",
-                },
-                "& .MuiInput-underline:before": {
-                  borderBottomWidth: "1px",
-                  borderBottomColor: " rgb(255,255,255, 0.3)",
-                },
-              }}
-              {...textField}
-            />
-          ))}
-          <div id="inputFields">
-            <input
-              type="submit"
-              value="Verzenden"
-              id="submitForm"
-              onClick={handleButtonClick}
-            />
-            {isLoading ? (
-              <div id="submitFormProcessing">
-                <CountUp delay={1} end={100} />
-                <p> % </p>
-              </div>
-            ) : null}
-          </div>
-        </form>
-      </div>
-
       <div className="FormDesktop">
         <form className="contact__form" onSubmit={sendEmail}>
           <div id="firstHalf">
@@ -283,6 +231,57 @@ function FormComponent() {
                 </div>
               ) : null}
             </div>
+          </div>
+        </form>
+      </div>
+      <div className="FormMobile">
+        <form className="contact__form" onSubmit={sendEmail}>
+          {textFieldProps.map((textField) => (
+            <TextField
+              // x
+              key={textField.id}
+              variant="standard"
+              placeholder=""
+              InputLabelProps={{
+                style: { fontFamily: "Poppins", color: "white" },
+              }}
+              inputProps={{
+                style: {
+                  fontFamily: "Poppins",
+                  color: "white",
+                  marginTop: "0.5rem",
+                },
+              }}
+              sx={{
+                input: { color: "white" },
+                width: "100%",
+                marginTop: "1rem",
+                color: "white",
+                "& .MuiInput-underline:after": {
+                  borderBottomColor: " rgb(255,255,255, 0.3)",
+                  borderBottomWidth: "1px",
+                },
+                "& .MuiInput-underline:before": {
+                  borderBottomWidth: "1px",
+                  borderBottomColor: " rgb(255,255,255, 0.3)",
+                },
+              }}
+              {...textField}
+            />
+          ))}
+          <div id="inputFields">
+            <input
+              type="submit"
+              value="Verzenden"
+              id="submitForm"
+              onClick={handleButtonClick}
+            />
+            {isLoading ? (
+              <div id="submitFormProcessing">
+                <CountUp delay={1} end={1000} />
+                <p> % </p>
+              </div>
+            ) : null}
           </div>
         </form>
       </div>

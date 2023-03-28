@@ -2,14 +2,11 @@
 
 ### **Scopes:**
 
-- The form is rendered correctly on devices above 768px
-- The form is rendered correctly on devices below 768px
+- The form is rendered correctly
 - Form fields are interactable
 - Form fields can take some form of input
 - When you click the submit button, the button is disabled and a loading indicator is displayed
 - When loading is completed you are navigated to the result page
-- The email is sent to the correct email address
-- The email contains the correct information
 
 ### **Goal**
 
