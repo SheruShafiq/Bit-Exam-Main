@@ -5,7 +5,7 @@ function NavItem(props) {
   const { url, buttonText } = props;
   const handleButtonClick = (event) => {
     event.preventDefault();
-    window.open(url);
+    window.location.href = url;
   };
   return (
     <>

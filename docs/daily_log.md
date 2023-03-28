@@ -130,3 +130,13 @@
 - Documented all the components
 - Generated a general readme for the project
 - Refactored the title component
+
+  > ## **28/03/2023**
+
+- Succesfully demo'ed the project to the client
+- Noted down their feedback and forwarded it to the production team
+- Completed testing and documenting all the core components
+- Fixed hover and transition bug on landing page
+- Fixed and updated Header and navigation bugs
+- Updated Jira board
+- Uplaoded videoProves
