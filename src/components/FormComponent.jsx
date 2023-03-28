@@ -278,7 +278,7 @@ function FormComponent() {
             />
             {isLoading ? (
               <div id="submitFormProcessing">
-                <CountUp delay={1} end={1000} />
+                <CountUp delay={1} end={100} />
                 <p> % </p>
               </div>
             ) : null}
