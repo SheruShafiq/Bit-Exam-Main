@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# Linguist overrides
+*.md linguist-detectable=true
+README.md linguist-detectable=false
+readme.md linguist-detectable=false
