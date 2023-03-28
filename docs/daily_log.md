@@ -140,3 +140,4 @@
 - Fixed and updated Header and navigation bugs
 - Updated Jira board
 - Uplaoded videoProves
+- That concludes this project.
