@@ -7,6 +7,7 @@
     /* To apply my costum color */ drop-shadow(0 0 0 black)
     /* To apply my costum color more stronger */ drop-shadow(0 0 0 black)
     drop-shadow(0 0 0 black) drop-shadow(0 0 0 black);
+  margin-bottom: 10px;
 }
 
 #header {
@@ -51,7 +52,7 @@
   padding: 1rem;
   text-align: center;
   margin-right: 1rem;
-
+  width: 80px;
   height: 80px;
   margin-top: -16px;
   line-height: 0;
@@ -61,5 +62,13 @@
 @media (min-width: 768px) {
   #menuButton {
     display: block;
+  }
+  #logo {
+    margin-left: 3rem;
+    margin-bottom: 13px;
+  }
+  #header {
+    margin-left: -5px;
+    margin-top: 5px;
   }
 }
