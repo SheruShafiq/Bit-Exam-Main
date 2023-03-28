@@ -37,11 +37,7 @@ Test data will be generated using a mock API service provided by the Cypress Eng
 - Verify that an error message is displayed indicating that the form submission failed.
 - Verify that no email is sent when the form submission fails.
 - Verify that the loading indicator is displayed during the form submission process.
-- Verify that the loading indicator disappears after the form submission process is complete.
 - Verify that the navigation to the confirmation page is working as expected.
-- Verify that submitting the form with only one or two fields filled out does not result in a successful submission.
-- Verify that submitting the form with an invalid email address does not result in a successful submission.
-- Verify that the form data is cleared after submission.
 - Verify that the email is sent to the correct email address.
 - Verify that the email contains the exact information that was submitted.
 
