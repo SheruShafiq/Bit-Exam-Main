@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "../styles/NavMenuStyles.css";
-
+import logo from "../images/logo.png";
+import MenuButton from "./MenuButton";
+import NavItem from "./NavItem";
 function NavMenu() {
   // Define the state variable to keep track of the menu's open/closed state.
   const [isOpen, setIsOpen] = useState(false);
@@ -12,17 +14,17 @@ function NavMenu() {
 
   // Define an array of navigation links with their labels and URLs.
   const navLinks = [
-    { id: 1, label: "Home", url: "https://headline-interactive.nl/" },
-    { id: 2, label: "Cases", url: "https://headline-interactive.nl/cases/" },
-    { id: 3, label: "Over ons", url: "https://headline-interactive.nl/about/" },
+    { id: 1, name: "Home", url: "https://headline-interactive.nl/" },
+    { id: 2, name: "Cases", url: "https://headline-interactive.nl/cases/" },
+    { id: 3, name: "Over ons", url: "https://headline-interactive.nl/about/" },
     {
       id: 4,
-      label: "Vacatures",
+      name: "Vacatures",
       url: "https://headline-interactive.nl/werken-bij-hi/",
     },
     {
       id: 5,
-      label: "Contact",
+      name: "Contact",
       url: "https://headline-interactive.nl/contact/",
     },
   ];
@@ -30,26 +32,26 @@ function NavMenu() {
   // Render the menu with the navigation links.
   return (
     <>
-      <button className="button" id="menuButton" onClick={handleToggle}>
-        Menu
-      </button>
+      <MenuButton url="http://localhost:3000/" onchange={handleToggle} />
+
       <button className="button" id="menuDots" onClick={handleToggle}>
         ...
       </button>
 
       <nav className={`overlay-nav ${isOpen ? "open" : ""}`}>
-        <ul className="nav-links">
-          {navLinks.map((link) => (
-            <li key={link.id} className="nav-item">
-              <a href={link.url} className="nav-link" onClick={handleToggle}>
-                <div id="text"> {link.label} </div>{" "}
-              </a>
-            </li>
-          ))}
-          <button className="button" id="InmenuDots" onClick={handleToggle}>
-            ...
-          </button>
-        </ul>
+        <button className="button" id="InmenuDots" onClick={handleToggle}>
+          ...
+        </button>
+        {navLinks.map((navLink) => (
+          <NavItem
+            key={navLink.id}
+            url={navLink.url}
+            buttonText={navLink.name}
+          />
+        ))}
+        <a href="https://headline-interactive.nl/">
+          <img id="InmenuLogo" src={logo} alt="Logo" />
+        </a>
       </nav>
     </>
   );

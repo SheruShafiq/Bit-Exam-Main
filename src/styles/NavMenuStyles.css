@@ -62,15 +62,15 @@ a:active {
   font-family: "Poppins, sans-serif";
   font-weight: 900;
   letter-spacing: 2px;
-  padding: 1rem;
   text-align: center;
-  margin-right: 1rem;
   width: 80px;
   height: 80px;
   margin-top: -16px;
   line-height: 0;
   position: absolute;
-  top: 16px;
+  padding: 1rem;
+  margin-right: 1rem;
+  top: 16;
   right: -16px;
   color: white;
 }
@@ -91,8 +91,55 @@ a:active {
   display: block;
   height: 100%;
 }
+#menuButton {
+  display: none;
+}
+/* fade ALL out on parent hover */
+.nav-links:hover > .nav-item {
+  opacity: 0.6;
+}
+
+/* fade ONE in on hover */
+.nav-links > .nav-item:hover {
+  opacity: 1;
+}
+
+.nav-item {
+  width: fit-content;
+}
+#InmenuLogo {
+  position: absolute;
+  width: 4rem;
+  height: 3rem;
+  padding: 1rem;
+  margin-right: 1rem;
+  top: 9px;
+  left: 0px;
+}
 
 @media (min-width: 768px) {
+  #menuButton {
+    display: block;
+    margin-top: -35px;
+  }
+
+  #InmenuDots {
+    font-size: xx-large;
+    font-family: "Poppins, sans-serif";
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    margin-top: -16px;
+    line-height: 0;
+    position: absolute;
+    padding: 1rem;
+    margin-right: 1rem;
+    top: 21px;
+    right: -11px;
+    color: white;
+  }
   .nav-item {
     margin-top: -20px;
     width: 600px;
@@ -106,20 +153,13 @@ a:active {
     font-family: "Poppins";
     line-height: 100px;
   }
-}
-
-/* fade ALL out on parent hover */
-.nav-links:hover > .nav-item {
-  opacity: 0.6;
-}
-
-/* fade ONE in on hover */
-.nav-links > .nav-item:hover {
-  opacity: 1;
-}
-#menuButton {
-  margin-top: -35px;
-}
-.nav-item {
-  width: fit-content;
+  #InmenuLogo {
+    position: absolute;
+    width: 4rem;
+    height: 3rem;
+    padding: 1rem;
+    margin-right: 1rem;
+    top: 21px;
+    left: 43px;
+  }
 }
