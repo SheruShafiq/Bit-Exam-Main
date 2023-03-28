@@ -12,7 +12,7 @@ function Header() {
       <a href="https://headline-interactive.nl/">
         <img id="logo" src={logo} alt="Logo" />
       </a>
-      css Copy code
+
       {/* Render the navigation menu */}
       <div id="menu">
         <Nav />
